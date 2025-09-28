@@ -1,10 +1,8 @@
-let nome = prompt("Olá, qual o seu nome?");
-alert("Bem-Vindo " + nome)
+// Função chamada quando o botão "OK" é clicado
+function mostrarNome() {
+    // Pega o valor digitado na caixinha (input com id="nome")
+    let nome = document.getElementById("nome").value;
 
-let idade = prompt(`${nome}, digite sua idade`)
-
-if (idade >= 16) {
-    alert("Você pode votar !!!");
-} else {
-    alert("Você ainda não pode votar !!!");
-};
+    // Mostra um alerta com a mensagem personalizada
+    alert("Seja bem-vindo(a) " + nome + " a sua calculadora de IMC");
+}
