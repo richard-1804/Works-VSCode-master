@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define que o documento é HTML5 e está em português do Brasil -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Votação</title>
+    <meta charset="UTF-8"> <!-- Define que os caracteres (acentos, ç, etc.) vão funcionar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz a página se ajustar em celular/pc -->
+    <title>Calculadora de IMC</title> <!-- Nome que aparece na aba do navegador -->
 </head>
+
 <body>
-    <h1>Bem-Vindo ao Sistema de Votação</h1>
+    <h1>Calculadora de IMC</h1> <!-- Título principal da página -->
+
+    <div id="mensagem"> <!-- Caixa (div) que guarda todo o conteúdo que aparece na tela -->
+        <p>Bem-Vindo(a) a sua calculadora de IMC</p> <!-- Texto de boas-vindas -->
+        <p>Digite seu nome abaixo:</p> <!-- Instrução para o usuário -->
+        
+        <!-- Caixinha para digitar o nome -->
+        <input type="text" id="nome"> 
+        
+        <!-- Botão. Quando clicado, executa a função mostrarNome() do JavaScript -->
+        <button onclick="mostrarNome()">OK</button>
+    </div>
+
+    <!-- Importa e executa o arquivo JavaScript externo -->
     <script src="JS/script.JS"></script>
 </body>
+
 </html>
