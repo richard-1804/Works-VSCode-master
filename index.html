@@ -1,46 +1,41 @@
+<!--
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC</title>
+    <title>Alistamento Militar</title>
 </head>
 
 <body>
-    <h1>Calculadora de IMC</h1>
 
-    <!-- Essa div contém as mensagens e os inputs -->
-    <div id="mensagem">
+    <h1>Alistamento militar</h1>
+    <div id="alistar">
 
-        <!-- Mensagem inicial -->
-        <p>Bem-Vindo(a) a sua calculadora de IMC</p>
+    <p>Digite seu nome:</p>
+    <input type="text" id="nome">
 
-        <!-- Caixa de texto para digitar o nome -->
-        <p>Digite seu nome abaixo:</p>
-        <input type="text" id="nome">
+    <p>Digite sua idade:</p>
+    <input type="number" id="idade">
 
-        <!-- Caixa de texto para digitar o peso -->
-        <p>Digite seu peso (em Kg):</p>
-        <input type="number" id="peso">
+    <p>Informe seu Gênero</p>
+    <input type="text" id="genero">
 
-        <!-- Caixa de texto para digitar a altura -->
-        <p>Digite sua altura (em metros):</p>
-        <!-- o "step=0.01" permite usar números com casas decimais -->
-        <input type="number" id="altura" step="0.01">
-
-        <p></p>
     </div>
 
-    <!-- Botão que chama a função calculadoraIMC() quando clicado -->
-    <button onclick="calculadoraIMC()">Calcular IMC</button>
+    <p></p>
 
-    <!-- Divs onde o resultado e a classificação vão aparecer -->
+    <button onclick="alistamento()">Verifique sua situação militar</button>
+
+    <p></p>
+
     <div id="resultado"></div>
-    <div id="tabelaIMC"></div>
 
-    <!-- Ligação com o arquivo JS -->
-    <script src="JS/script.JS"></script>
-
+    <script src="alistamento.js"></script>
 </body>
+
 </html>
+-->
