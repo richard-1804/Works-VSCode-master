@@ -4,10 +4,12 @@ const totalDiaAnalise = 7;
 let diasContados = 1;
 let consumoAcumulado = 0;
 
+console.log("----Início Da Análise Semanal----");
 
 // Simulação de Consumo
 while (diasContados <= totalDiaAnalise) {
     let consumoDia = 40 + diasContados*2
+    console.log("Dia " + diasContados + ": " + consumoDia + " kWh");
     consumoAcumulado += consumoDia
     diasContados++
 };
@@ -16,9 +18,9 @@ while (diasContados <= totalDiaAnalise) {
 let mediaConsumoSemanal = consumoAcumulado / totalDiaAnalise;
 
 // Exibindo resultados
-console.log(`----Boleto da Coelba----`);
+console.log(`\n----Boleto da Coelba----`);
 console.log(`Consumo total acumulado: ${consumoAcumulado} kWh`);
-console.log(`Consumo semanal: ${mediaConsumoSemanal} kWh\n`);
+console.log(`Consumo semanal: ${mediaConsumoSemanal.toFixed(2)} kWh\n`);
 
 
 // Analisando o consumo com if/else
@@ -41,20 +43,16 @@ const mesAnalise = 3
 switch (mesAnalise) {
     case 1:
         console.log(`Janeiro: Início de ano.`);
-    break;
-
+        break;
     case 3:
         console.log(`Março: Relatório de Primeiro Trimestre.`);
-    break;
-
+        break;
     case 6:
         console.log(`Junho: Relatório Semestral.`);
-    break;
-
+        break;
     case 12:
         console.log(`Dezembro: Fechamento Anual.`);
-    break;
-
+        break;
     default:
         console.log(`Relatório Mensal Padrão.`);
 };
