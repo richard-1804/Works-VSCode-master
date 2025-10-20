@@ -10,11 +10,11 @@ function buscaValor(lista, procurando) {
 }
 
 // Criamos uma lista para procura
-let frutasEstoque = ["uva", "pera", "caqui", "maçã", "morango"]
+let minhasCores = ["preto", "azul", "verde", "branco", "vermelho"]
 
 // Alimentamos nossa função com um valor que existe e que não existe
-let resultado = buscaValor(frutasEstoque, "maçã")
-let resultado1 = buscaValor(frutasEstoque, "nuggets")
+let resultado = buscaValor(minhasCores, "preto")
+let resultado1 = buscaValor(minhasCores, "roxo")
 
 // Exibimos o resultado no console
 console.log(resultado)
